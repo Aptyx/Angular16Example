@@ -29,17 +29,8 @@ export class AppComponent {
     }
   
     // Digital feedback function.
-    btnFb(fb:boolean) {
-      let button = this.myButton.nativeElement;
-      if(fb){
-        if(!button.classList.contains('active')){
-          button.classList.add('active');
-        }
-      }
-      else{
-        if(button.classList.contains('active')){
-          button.classList.remove('active');
-        }
-      }
+    btnFb(fb: boolean) { 
+      const button = this.myButton.nativeElement; 
+      button.classList.toggle('active', fb); 
     }
 }
