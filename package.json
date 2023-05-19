@@ -2,6 +2,9 @@
   "name": "angular16-app",
   "version": "0.0.0",
   "scripts": {
+    "archive": "ch5-cli archive -p angular16app -d dist/angular16-app -o dist",
+    "deploy": "ch5-cli deploy -p -H 192.168.0.217 -t touchscreen dist/angular16app.ch5z",
+    "buildzipdeploy": "npm run build && npm run archive && npm run deploy",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -18,6 +21,8 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "@crestron/ch5-crcomlib": "^2.3.1",
+    "@crestron/ch5-utilities": "^0.1.52",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

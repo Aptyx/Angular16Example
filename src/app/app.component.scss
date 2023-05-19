@@ -1,0 +1,33 @@
+.main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    margin: 0px;
+}
+
+.button {
+    font-family: 'UniNeue';
+    font-weight: 300;
+    background-color: #001040;
+    color: #FFFFFF;
+    border-radius: 23px;
+    border-style: none;
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.button.active {
+    background-color: #36bfff;
+}
